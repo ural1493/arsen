@@ -17,25 +17,27 @@ const items: WorkProcess[] = [
 
 const WorkProcess = () => {
   return (
-    <div className={s.container}>
-      <h2 className={s.heading}>Процесс работы</h2>
-      <div className={s.itemsContainer}>
-        {items.map(({ id, img, text, title }) => (
-          <div key={id} className={s.item}>
-            <Image
-              src={img}
-              alt={text}
-              width={250}
-              height={200}
-            />
-            <div>
-              <h3>{title}</h3>
-              <p>{text}</p>
+    <section className={s.section}>
+      <div className={s.container}>
+        <h2 className={s.heading}>Процесс работы</h2>
+        <div className={s.itemsContainer}>
+          {items.map(({ id, img, text, title }) => (
+            <div key={id} className={s.item}>
+              <Image
+                src={img}
+                alt={text}
+                width={250}
+                height={200}
+              />
+              <div className={s.item_content}>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
