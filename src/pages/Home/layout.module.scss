@@ -1,0 +1,13 @@
+.main {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+.items-container {
+  padding: 16px; //todo
+
+  @media screen and (min-width: 1200px){
+    max-width: 1200px;
+  }
+}

@@ -1,7 +1,3 @@
-export default function Home() {
-  return (
-    <main>
-      arsen
-    </main>
-  )
-}
+import Home from "@/pages/Home";
+
+export default Home;
